@@ -1,0 +1,57 @@
+/* ==================================================================
+   visit.css: Student 3 (Visit page)
+   Only edit this file and visit.html.
+
+   Use the shared variables from base.css, for example:
+     color: var(--color-muted);
+     padding: var(--space-5);
+     border-radius: var(--radius);
+   The full list is at the bottom of the README.
+   ================================================================== */
+
+/* ---------- TODO 1: "Find us" and "Opening hours" side by side ---------- */
+/* .visit-grid: CSS Grid with 2 equal columns and a --space-5 gap.
+     align-items: start keeps each card only as tall as its content.
+   .info-card: white background (--color-surface), a 1px solid
+     --color-border border, --radius corners, --shadow, --space-5 padding.
+   address: browsers show it in italics, so set font-style: normal.
+   .map: full width, with a thin border and --radius-sm corners. */
+
+
+/* ---------- TODO 2: Opening hours table ---------- */
+/* .hours-table: full width, with border-collapse: collapse.
+   All cells (th and td): left-aligned, --space-3 padding on the top and
+     bottom, and a 1px --color-border line along the bottom.
+   The header row: smaller, muted text.
+   The hours (td): keep each time on one line with white-space: nowrap.
+   .hours-note: muted, with some space above it. */
+
+
+/* ---------- TODO 3: Contact form ---------- */
+/* .contact: mint background (--color-mint).
+   .contact-form: a white card (--radius-lg corners, --shadow, --space-6
+     padding) that is at most 720px wide. Make it a Flexbox column with a
+     --space-5 gap to space out everything inside it.
+   .form-grid: CSS Grid with 2 columns, so the four fields form a
+     2 x 2 grid.
+   .field: a Flexbox column, so each label sits above its field, with a
+     --space-2 gap.
+   Labels: bold.
+   The fields (.field input, .field select, .field textarea):
+     width: 100%, --space-3 padding, a 1px solid --color-border-strong
+     border, --radius-sm corners, and font: inherit so they use the page
+     font.
+   The submit button: align-self: flex-start, so it doesn't stretch. */
+
+
+/* ---------- Stretch: radio buttons and checkbox ---------- */
+/* .choice-group: remove the fieldset's border, margin and padding.
+   .choice: Flexbox, so each circle or box lines up with its text.
+   accent-color: var(--color-primary) turns the radio buttons and the
+   checkbox green. */
+
+
+/* ---------- TODO 4: Phones (700px and narrower) ---------- */
+@media (max-width: 700px) {
+  /* Show the two cards in one column, and the form grid in one column. */
+}

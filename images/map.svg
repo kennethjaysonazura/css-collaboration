@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif">
+  <!-- streets -->
+  <rect width="480" height="300" fill="#ffffff"/>
+  <!-- blocks -->
+  <rect x="-8" y="-8" width="174" height="112" rx="8" fill="#cfe5d6"/>
+  <rect x="190" y="-8" width="90" height="112" rx="8" fill="#e3ebe5"/>
+  <rect x="320" y="-8" width="168" height="112" rx="8" fill="#e3ebe5"/>
+  <rect x="-8" y="140" width="174" height="70" rx="8" fill="#e3ebe5"/>
+  <rect x="190" y="140" width="90" height="70" rx="8" fill="#e3ebe5"/>
+  <rect x="320" y="140" width="168" height="70" rx="8" fill="#1d5c45"/>
+  <rect x="-8" y="246" width="174" height="62" rx="8" fill="#e3ebe5"/>
+  <rect x="190" y="246" width="90" height="62" rx="8" fill="#e3ebe5"/>
+  <rect x="320" y="246" width="168" height="62" rx="8" fill="#e3ebe5"/>
+  <!-- park -->
+  <circle cx="34" cy="30" r="14" fill="#8cc3a1"/>
+  <circle cx="70" cy="48" r="11" fill="#8cc3a1"/>
+  <circle cx="126" cy="28" r="12" fill="#8cc3a1"/>
+  <text x="80" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="#2f6b4f">Riverside Park</text>
+  <!-- street names -->
+  <text x="83" y="127" text-anchor="middle" font-size="13" fill="#4f5c56">Elm Street</text>
+  <text x="83" y="233" text-anchor="middle" font-size="13" fill="#4f5c56">Station Road</text>
+  <text transform="translate(305 94) rotate(-90)" font-size="13" fill="#4f5c56">5th Avenue</text>
+  <text transform="translate(183 90) rotate(-90)" font-size="11" fill="#4f5c56">4th Ave</text>
+  <!-- station -->
+  <text x="404" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Central Station</text>
+  <!-- cafe pin and label -->
+  <g transform="translate(336 98)">
+    <path d="M0 0C-4-8-14-16-14-26A14 14 0 0 1 14-26C14-16 4-8 0 0z" fill="#f4b740" stroke="#143f30" stroke-width="2.5"/>
+    <circle cx="0" cy="-26" r="5.5" fill="#143f30"/>
+  </g>
+  <rect x="358" y="40" width="104" height="30" rx="8" fill="#143f30"/>
+  <text x="410" y="60" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Corner Cup</text>
+</svg>

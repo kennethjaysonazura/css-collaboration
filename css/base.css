@@ -1,0 +1,368 @@
+/* ==================================================================
+   Corner Cup: shared styles (base.css)
+   Provided by your teacher. Please don't edit this file.
+   Use the variables and classes below in your own page's CSS.
+   ================================================================== */
+
+/* ---------- Design tokens ---------- */
+:root {
+  /* Colors */
+  --color-primary: #1d5c45;       /* awning green: buttons, links */
+  --color-primary-dark: #143f30;  /* header, footer, hover states */
+  --color-accent: #f4b740;        /* marigold: highlights (always use dark text on it) */
+  --color-accent-soft: #fcefcf;   /* pale marigold: badges, soft highlights */
+  --color-mint: #e1ece4;          /* pale green: soft backgrounds */
+  --color-bg: #f4f6f1;            /* page background */
+  --color-surface: #ffffff;       /* cards and form fields */
+  --color-text: #1c2622;          /* main text */
+  --color-muted: #4f5c56;         /* secondary text */
+  --color-border: #d3ddd6;        /* card borders and dividers */
+  --color-border-strong: #7b8a82; /* form field borders */
+
+  /* Fonts */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Shapes */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow: 0 2px 10px rgba(28, 38, 34, 0.08);
+
+  /* Layout */
+  --max-width: 1100px;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-display);
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+}
+
+a {
+  color: var(--color-primary);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* ---------- Layout helpers ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.section-title {
+  margin-bottom: var(--space-3);
+}
+
+.section-intro {
+  max-width: 60ch;
+  margin-bottom: var(--space-6);
+  color: var(--color-muted);
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.button:hover {
+  border-color: var(--color-primary-dark);
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.button--secondary {
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.button--secondary:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ---------- Skip link (appears when you press Tab) ---------- */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: var(--space-4);
+  z-index: 10;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand:hover {
+  color: #ffffff;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.nav-list a[aria-current="page"] {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible {
+  outline-color: var(--color-accent);
+}
+
+/* The striped awning that hangs below the header.
+   Its scalloped edge overlaps the top 14px of the first section. */
+.site-header::after {
+  content: "";
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 34px;
+  margin-bottom: -14px;
+  background:
+    radial-gradient(circle at 14px 20px, var(--color-primary) 13.5px, transparent 14px) 0 0 / 56px 34px repeat-x,
+    radial-gradient(circle at 42px 20px, #ffffff 13.5px, transparent 14px) 0 0 / 56px 34px repeat-x,
+    linear-gradient(90deg, var(--color-primary) 0 28px, #ffffff 28px 56px) 0 0 / 56px 20px repeat-x;
+  filter: drop-shadow(0 3px 2px rgba(28, 38, 34, 0.15));
+  pointer-events: none;
+}
+
+/* ---------- Page header (used by the Menu and Visit pages) ---------- */
+.page-header {
+  padding: var(--space-8) 0 var(--space-7);
+  background: var(--color-mint);
+}
+
+.page-header h1 {
+  margin-bottom: var(--space-3);
+}
+
+.page-header p {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: var(--space-7) 0 var(--space-5);
+  background: var(--color-primary-dark);
+  color: #dfe9e2;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.footer-grid p {
+  margin: 0 0 var(--space-2);
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.footer-title {
+  margin-bottom: var(--space-2);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+}
+
+.footer-bottom {
+  margin: var(--space-6) 0 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: #c3d3c8;
+  font-size: 0.875rem;
+}
+
+/* ---------- Phones (700px and narrower) ---------- */
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.625rem;
+  }
+
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .section {
+    padding: var(--space-7) 0;
+  }
+
+  .page-header {
+    padding: var(--space-7) 0 var(--space-6);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+}
+
+/* ---------- Respect the "reduce motion" setting ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}

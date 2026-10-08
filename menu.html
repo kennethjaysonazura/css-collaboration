@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Corner Cup</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (provided, don't edit) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        Corner Cup
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" aria-current="page">Menu</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Student 2: Menu page ===== -->
+  <main id="main">
+    <!--
+    ===================================================================
+    STUDENT 2: build the Menu page inside this <main> element.
+    Text to use is in "quotes". Suggested class names are in [brackets].
+    Style everything in css/menu.css.
+    ===================================================================
+
+    TODO 1: Page header and category links (about 15 min)
+      1. A <section> with the shared class [page-header] (it's already
+         styled in base.css) containing a <div> [container] with:
+         - <h1> "Our menu"
+         - <p> "Everything is made in-house, and oat or almond milk is always free."
+      2. A <nav> [menu-nav] with aria-label="Menu sections", containing a
+         <div> [container] with a <ul> [menu-nav-list] of three links:
+           "Specials" goes to #specials
+           "Coffee" goes to #coffee
+           "Pastries" goes to #pastries
+
+    TODO 2: Specials (about 15 min)
+    A <section> [section] with id="specials" (Student 1 links to this id!).
+    Inside it, a <div> [container] with:
+      - <h2> [section-title] "This week's specials"
+      - <p> [section-intro] "Here until Sunday, or until they run out."
+      - A <div> [special-grid] holding two <article> [special-card].
+        Each card has:
+          an <img> with width="480" height="300" and descriptive alt text, then
+          a <div> [special-body] holding:
+            a <div> [item-head] with an <h3> (the name) and a <span> [price]
+            a <p> with the description
+        Card 1: images/special-latte.svg
+          "Honey Oat Latte"  "$4.80"
+          "Espresso, steamed oat milk and a spoonful of local honey."
+        Card 2: images/special-bread.svg
+          "Banana Walnut Bread"  "$3.90"
+          "A thick toasted slice, served warm with salted butter."
+
+    TODO 3: Menu lists (about 20 min)
+    Two sections. Each is a <section> [section menu-section] with an id,
+    containing a <div> [container] with an <h2> [section-title] and a
+    <ul> [menu-list]. Each item is an <li> [menu-item] holding:
+      a <div> [item-head] with an <h3> (the name) and a <span> [price]
+      a <p> with the description
+
+    Section 1: id="coffee", <h2> "Coffee"
+      "Espresso"     "$2.80"  "A double shot of our house blend: chocolatey with a bright finish."
+      "Cappuccino"   "$3.80"  "Espresso with equal parts steamed milk and thick foam."  (stretch: Bestseller)
+      "Flat White"   "$4.00"  "A double shot topped with a thin layer of silky milk."
+      "Cold Brew"    "$4.20"  "Steeped for 18 hours and served over ice."
+
+    Section 2: id="pastries", <h2> "Pastries"
+      "Butter Croissant"     "$3.20"  "Flaky, golden and baked every morning."  (stretch: Bestseller)
+      "Cinnamon Roll"        "$3.60"  "Soft, swirled and topped with cream cheese icing."
+      "Blueberry Muffin"     "$3.00"  "Packed with blueberries under a crunchy sugar top."
+      "Oat & Raisin Cookie"  "$2.40"  "Chewy in the middle and crisp at the edges."  (stretch: Vegan)
+      Tip: in HTML, write the & as &amp;
+
+    TODO 4: Group-order note (about 5 min)
+    After the two sections, a <div> [container] with a <p> [group-note]:
+      "Ordering for a meeting or a party? Send us a message and we'll have
+       everything ready."
+    Make "Send us a message" a link to visit.html#contact
+    (Student 3 creates that id).
+
+    TODO 5: Phone layout
+    Nothing to add here. This one is CSS only (see css/menu.css).
+
+    STRETCH (only if you finish early): Badges
+    Inside the <h3> of the three items marked "stretch", after the name,
+    add a <span> [badge] with "Bestseller" or "Vegan".
+    ===================================================================
+    -->
+  </main>
+
+  <!-- ===== Shared footer (provided, don't edit) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Corner Cup</p>
+          <p>Your neighborhood café since 2019. Good coffee, slow mornings, no rush.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Hours</h2>
+          <p>Mon–Fri: 7 a.m. – 7 p.m.<br>Sat: 8 a.m. – 8 p.m.<br>Sun: 8 a.m. – 4 p.m.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Find us</h2>
+          <p>120 Elm Street, Riverside<br>
+            <a href="tel:+15550123456">(555) 012-3456</a><br>
+            <a href="mailto:hello@cornercup.example">hello@cornercup.example</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 Corner Cup. A class project built with HTML and CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

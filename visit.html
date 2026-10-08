@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit us | Corner Cup</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/visit.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (provided, don't edit) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        Corner Cup
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="visit.html" aria-current="page">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Student 3: Visit page ===== -->
+  <main id="main">
+    <!--
+    ===================================================================
+    STUDENT 3: build the Visit page inside this <main> element.
+    Text to use is in "quotes". Suggested class names are in [brackets].
+    Style everything in css/visit.css.
+    ===================================================================
+
+    TODO 1: Page header and the "Find us" card (about 15 min)
+      1. A <section> with the shared class [page-header] (it's already
+         styled in base.css) containing a <div> [container] with:
+         - <h1> "Visit us"
+         - <p> "We're on the corner of Elm Street and 5th Avenue, right across
+           from Central Station. First time here? See why our regulars keep
+           coming back."
+           Make "See why our regulars keep coming back" a link to
+           index.html#why-us (Student 1 creates that id).
+      2. A <section> [section] containing a <div> [container visit-grid]
+         that holds two <div> [info-card] cards.
+         Card 1:
+           - <h2> "Find us"
+           - An <address> with these lines, with a <br> between them:
+               "Corner Cup"
+               "120 Elm Street (corner of 5th Avenue)"
+               "Riverside"
+               "(555) 012-3456" as a link to tel:+15550123456
+               "hello@cornercup.example" as a link to mailto:hello@cornercup.example
+           - An <img> [map] with src="images/map.svg", width="480"
+             height="300", and alt text that describes the map.
+         Card 2: the opening hours (TODO 2).
+
+    TODO 2: Opening hours table (about 15 min)
+    Inside card 2:
+      - <h2> "Opening hours"
+      - A <table> [hours-table] with:
+          a <thead> row with two <th scope="col">: "Day" and "Hours"
+          a <tbody> with three rows. Each row has a <th scope="row"> for
+          the day and a <td> for the hours:
+            "Monday to Friday"   "7:00 a.m. – 7:00 p.m."
+            "Saturday"           "8:00 a.m. – 8:00 p.m."
+            "Sunday"             "8:00 a.m. – 4:00 p.m."
+      - <p> [hours-note] "The kitchen closes 30 minutes before we do."
+
+    TODO 3: Contact form (about 25 min)
+    A <section> [section contact] with id="contact" (Students 1 and 2 link
+    to this id!). Inside it, a <div> [container] with:
+      - <h2> [section-title] "Book a table or send us a message"
+      - <p> [section-intro] "Fill in the form and we'll reply within one business day."
+      - A <form> [contact-form] with action="#contact" method="get"
+        (there's no back end yet, so sending it just reloads the page). Inside:
+          1. A <div> [form-grid] holding four <div> [field] boxes.
+             Each has a <label> whose for="" matches its field's id="":
+               "Name"              <input type="text" id="name" name="name" required>
+               "Email"             <input type="email" id="email" name="email" required>
+               "Visit date"        <input type="date" id="date" name="date">
+               "Number of guests"  <select id="guests" name="guests"> with the
+                                   options 1, 2, 3, 4, 5 and "6 or more"
+          2. One more <div> [field]:
+               "Message"           <textarea id="message" name="message" rows="5">
+          3. A submit button: <button class="button" type="submit"> "Send message"
+
+    TODO 4: Phone layout
+    Nothing to add here. This one is CSS only (see css/visit.css).
+
+    STRETCH (only if you finish early): Radio buttons and a checkbox
+      - Between the form grid and the message field, a <fieldset> [choice-group]
+        with a <legend> "What's this about?" and three radio buttons
+        (all with name="topic"), each wrapped in a <label> [choice]:
+          "Booking a table" (checked), "A group order", "Something else"
+      - After the message field, a checkbox wrapped in a <label> [choice]:
+          "Email me the monthly specials"
+    ===================================================================
+    -->
+  </main>
+
+  <!-- ===== Shared footer (provided, don't edit) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Corner Cup</p>
+          <p>Your neighborhood café since 2019. Good coffee, slow mornings, no rush.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Hours</h2>
+          <p>Mon–Fri: 7 a.m. – 7 p.m.<br>Sat: 8 a.m. – 8 p.m.<br>Sun: 8 a.m. – 4 p.m.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Find us</h2>
+          <p>120 Elm Street, Riverside<br>
+            <a href="tel:+15550123456">(555) 012-3456</a><br>
+            <a href="mailto:hello@cornercup.example">hello@cornercup.example</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 Corner Cup. A class project built with HTML and CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

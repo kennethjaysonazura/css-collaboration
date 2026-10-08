@@ -1,0 +1,61 @@
+/* ==================================================================
+   menu.css: Student 2 (Menu page)
+   Only edit this file and menu.html.
+
+   Use the shared variables from base.css, for example:
+     color: var(--color-muted);
+     padding: var(--space-5);
+     border-radius: var(--radius);
+   The full list is at the bottom of the README.
+   ================================================================== */
+
+/* ---------- TODO 1: Category links ---------- */
+/* .menu-nav: white background (--color-surface) and a thin bottom border
+     (--color-border).
+   .menu-nav-list: remove the bullets and the default spacing
+     (list-style, margin, padding), then use Flexbox with a --space-2 gap
+     and flex-wrap. Give it --space-4 padding on the top and bottom.
+   .menu-nav-list a: pill-shaped links. Add padding, a 2px solid
+     --color-primary border, --radius-pill corners, --color-primary text
+     and no underline.
+   On hover: fill the pill with --color-primary and make the text white. */
+
+
+/* ---------- TODO 2: Specials ---------- */
+/* .special-grid: CSS Grid with 2 equal columns and a --space-5 gap.
+   .special-card: white background, a 1px border, --radius-lg corners,
+     --shadow, and overflow: hidden so the image follows the rounded
+     corners.
+   .special-body: --space-5 padding.
+   .item-head (also used in TODO 3): Flexbox with the name on the left
+     and the price on the right (justify-content: space-between).
+     Remove the margin on its <h3>.
+   .price: --color-primary and bold.
+   Make the descriptions muted, with no extra margin. */
+
+
+/* ---------- TODO 3: Menu lists ---------- */
+/* .menu-section: remove the top padding so the sections don't sit too
+     far apart.
+   .menu-list: remove the bullets and the default spacing, then use CSS
+     Grid with 2 columns. Try gap: var(--space-5) var(--space-7);
+     and some space above the list.
+   .menu-item: some padding at the bottom and a 1px dashed
+     --color-border-strong line under each item. */
+
+
+/* ---------- TODO 4: Group-order note ---------- */
+/* .group-note: soft marigold background (--color-accent-soft), padding,
+   rounded corners, and --space-8 of margin at the bottom. */
+
+
+/* ---------- Stretch: badges ---------- */
+/* .badge: a small pill (--radius-pill corners, a little padding) with a
+   --color-accent-soft background and small, bold text in the body font
+   (--font-body). */
+
+
+/* ---------- TODO 5: Phones (700px and narrower) ---------- */
+@media (max-width: 700px) {
+  /* Show the specials and both menu lists in one column. */
+}
