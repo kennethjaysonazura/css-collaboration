@@ -17,6 +17,10 @@
    address: browsers show it in italics, so set font-style: normal.
    .map: full width, with a thin border and --radius-sm corners. */
 
+.visit-grid {
+  align-items: start;
+
+}
 
 /* ---------- TODO 2: Opening hours table ---------- */
 /* .hours-table: full width, with border-collapse: collapse.
@@ -26,6 +30,19 @@
    The hours (td): keep each time on one line with white-space: nowrap.
    .hours-note: muted, with some space above it. */
 
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+th {
+  font-size: 0.95rem;
+}
 
 /* ---------- TODO 3: Contact form ---------- */
 /* .contact: mint background (--color-mint).
