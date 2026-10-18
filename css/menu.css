@@ -27,13 +27,41 @@
 .menu-nav-list a{
   padding: 2px;
   border: var(--color-primary);
-  corner-shape: var(--radius-pill);
+  border-radius: var(--radius-pill);
   color: var(--color-primary);
 }
 
 .menu-nav-list a:Hover{
   background-color: var(--color-primary);
   color: white;
+}
+
+.special-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.special-card{
+  background-color: white;
+  border: 1px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.special-body{
+  padding: var(--space-5);
+}
+
+.item-head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.price{
+  color: var(--color-primary);
+  font-weight: bold;
 }
 /* ---------- TODO 1: Category links ---------- */
 /* .menu-nav: white background (--color-surface) and a thin bottom border
