@@ -63,6 +63,11 @@
   color: var(--color-primary);
   font-weight: bold;
 }
+
+.special-body p{
+  color: var(--color-muted);
+  margin: 0;
+}
 /* ---------- TODO 1: Category links ---------- */
 /* .menu-nav: white background (--color-surface) and a thin bottom border
      (--color-border).
