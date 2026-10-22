@@ -95,7 +95,14 @@
   margin-bottom: var(--space-8);
 }
 
-
+.badge{
+  border-radius: var(--radius-pill);
+  padding: 7px;
+  background-color: var(--color-accent-soft);
+  font-size: small;
+  font-weight: bold;
+  font-family: var(--font-body);
+}
 
 /* ---------- TODO 1: Category links ---------- */
 /* .menu-nav: white background (--color-surface) and a thin bottom border
