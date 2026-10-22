@@ -88,6 +88,15 @@
   border-bottom: 1px dashed var(--color-border-strong);
 }
 
+.group-note{
+  background-color: var(--color-accent-soft);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: var(--space-8);
+}
+
+
+
 /* ---------- TODO 1: Category links ---------- */
 /* .menu-nav: white background (--color-surface) and a thin bottom border
      (--color-border).
