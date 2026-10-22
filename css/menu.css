@@ -38,7 +38,7 @@
 
 .special-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 2fr;
   gap: var(--space-5);
 }
 
@@ -78,7 +78,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 2fr;
   gap: var(--space-7);
   padding-top: 10px;
 }
@@ -153,4 +153,14 @@
 /* ---------- TODO 5: Phones (700px and narrower) ---------- */
 @media (max-width: 700px) {
   /* Show the specials and both menu lists in one column. */
+  
+  .special-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .menu-list{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
