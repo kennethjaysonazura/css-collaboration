@@ -26,10 +26,11 @@
 
 .menu-nav-list a{
   text-decoration: none;
-  padding: 2px;
+  padding: 10px;
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-pill);
   color: var(--color-primary);
+  font-weight: bold;
 }
 
 .menu-nav-list a:Hover{
