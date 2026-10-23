@@ -93,10 +93,55 @@
             "Sunday"             "8:00 a.m. – 4:00 p.m."
       - <p> [hours-note] "The kitchen closes 30 minutes before we do."
 -->
-        <div class="info-card2"></div>
+      <div class="info-card2"></div>
         <h2>Opening hours</h2>
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Monday to Friday</td>
+              <td>7:00 a.m. to 7:00 p.m.</td>
+            </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>8:00 a.m. to 8:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>8:00 a.m. to 4:00 p.m.</td>
+        </tr>
+        </table>
+        <p>The kitchen closes 30 minutes before we do.</p>
       </div>
     </section>
+  <!--TODO 3: Contact form (about 25 min)
+    A <section> [section contact] with id="contact" (Students 1 and 2 link
+    to this id!). Inside it, a <div> [container] with:
+      - <h2> [section-title] "Book a table or send us a message"
+      - <p> [section-intro] "Fill in the form and we'll reply within one business day."
+      - A <form> [contact-form] with action="#contact" method="get"
+        (there's no back end yet, so sending it just reloads the page). Inside:
+          1. A <div> [form-grid] holding four <div> [field] boxes.
+             Each has a <label> whose for="" matches its field's id="":
+               "Name"              <input type="text" id="name" name="name" required>
+               "Email"             <input type="email" id="email" name="email" required>
+               "Visit date"        <input type="date" id="date" name="date">
+               "Number of guests"  <select id="guests" name="guests"> with the
+                                   options 1, 2, 3, 4, 5 and "6 or more"
+          2. One more <div> [field]:
+               "Message"           <textarea id="message" name="message" rows="5">
+          3. A submit button: <button class="button" type="submit"> "Send message"
+            -->
+   <section class="contact" id="contact"> 
+      <div class="container">
+        <h2 class="section-title">Book a table or send us a message</h2>
+        <p class="section-intro">Fill in the form and we'll reply within one business day</p>
+        
+      </div>
+   </section>
+
   </main>
   <!-- ===== Shared footer (provided, don't edit) ===== -->
   <footer class="site-footer">

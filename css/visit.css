@@ -19,7 +19,22 @@
 
 .visit-grid {
   align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
 
+.info-card {
+  background: var(--color-surface, white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius); 
+  box-shadow: var(--shadow);
+  padding: var(--space-5);
+}
+
+.map {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
 }
 
 /* ---------- TODO 2: Opening hours table ---------- */
