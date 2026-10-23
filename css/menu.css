@@ -52,6 +52,12 @@
   overflow: hidden;
 }
 
+.special-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .special-body{
   padding: var(--space-5);
 }
