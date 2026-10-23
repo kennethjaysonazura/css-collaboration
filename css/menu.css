@@ -33,6 +33,10 @@
   font-weight: bold;
 }
 
+.section-title{
+  padding-top: 50px;
+}
+
 .menu-nav-list a:Hover{
   background-color: var(--color-primary);
   color: white;
