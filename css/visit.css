@@ -19,16 +19,17 @@
 
 .visit-grid {
   align-items: start;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 2fr 2fr;
+  gap: var(--space-5);
 }
 
 .info-card {
-  background: var(--color-surface, white);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius); 
   box-shadow: var(--shadow);
   padding: var(--space-5);
+  font-style: normal;
 }
 
 .map {
@@ -59,6 +60,15 @@ th {
   font-size: 0.95rem;
 }
 
+td {
+  white-space: nowrap;
+}
+
+.hours-note {
+  background: var(--color-muted);
+  padding-top: var(--space-3);
+}
+
 /* ---------- TODO 3: Contact form ---------- */
 /* .contact: mint background (--color-mint).
    .contact-form: a white card (--radius-lg corners, --shadow, --space-6
@@ -74,6 +84,52 @@ th {
      border, --radius-sm corners, and font: inherit so they use the page
      font.
    The submit button: align-self: flex-start, so it doesn't stretch. */
+.contact {
+  background: var(--color-mint);
+}
+
+.contact-form {
+  padding: var(--space-6);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background-color: white;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+}
+
+label {
+  font-weight: bold;
+}
+
+.field input {
+width: 100%;
+padding: var(--space-3);
+border-radius: var(--radius-sm);
+border: 1px solid var(--color-border);
+font-style: inherit;
+
+}
+
+.field select {
+width: 100%;
+padding: var(--space-3);
+border-radius: var(--radius-sm);
+border: 1px solid var(--color-border);
+font-style: inherit;
+}
+
+.field textarea {
+width: 100%;
+padding: var(--space-3);
+border-radius: var(--radius-sm);
+border: 1px solid var(--color-border);
+font-style: inherit;
+}
 
 
 /* ---------- Stretch: radio buttons and checkbox ---------- */
@@ -82,7 +138,16 @@ th {
    accent-color: var(--color-primary) turns the radio buttons and the
    checkbox green. */
 
+.choice-group {
+  border: none;
+  margin: none;
+  padding: none;
+}
 
+.choice {
+accent-color: var(--color-primary);
+
+}
 /* ---------- TODO 4: Phones (700px and narrower) ---------- */
 @media (max-width: 700px) {
   /* Show the two cards in one column, and the form grid in one column. */
