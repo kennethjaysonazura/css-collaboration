@@ -50,7 +50,7 @@
       <div class="container">
         <h1>Visit us</h1>
         <p>We're on the corner of Elm Street and 5th Avenue, right across from Central Station.<br>
-          First time here? <a href="index.html#why-us" target="_blank">See why our regulars keep coming back. </a>
+        First time here? <a href="index.html#why-us" target="_blank">See why our regulars keep coming back. </a>
         </p>
       </div>
     </section>  
@@ -73,36 +73,15 @@
       <div class="container visit-grid">
         <div class="info-card">
           <h2>Find us</h2>
-          <p>Corner cup<br>
+          <p>
+            Corner cup<br>
             120 Elm Street (corner of 5th Avenue)<br>
             Riverside<br>
-          <a href="tel:+15550123456">(555) 012-3456</a><br>
-          <a href="mailto:hello@cornercup.example">hello@cornercup.example</a>
-          <img src="images/map.svg" width="480" height="300" alt="map of Corner cup cafe">
+            <a href="tel:+15550123456">(555) 012-3456</a><br>
+            <a href="mailto:hello@cornercup.example">hello@cornercup.example</a>
+            <img src="images/map.svg" width="480" height="300" alt="map of Corner cup cafe">
           </p>
-          </div>
-          <div class="info-card"><h2>Opening hours</h2>
-          <table>
-            <tr>
-              <th>Day</th>
-              <th>Hours</th>
-            </tr>
-            <tr>
-              <td>Monday to Friday</td>
-              <td>7:00 a.m. to 7:00 p.m.</td>
-            </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>8:00 a.m. to 8:00 p.m.</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td>8:00 a.m. to 4:00 p.m.</td>
-        </tr>
-        </table>
-        <p>The kitchen closes 30 minutes before we do.</p> 
         </div>
-      </section>
  <!--TODO 2: Opening hours table (about 15 min)
     Inside card 2:
       - <h2> "Opening hours"
@@ -115,9 +94,28 @@
             "Sunday"             "8:00 a.m. – 4:00 p.m."
       - <p> [hours-note] "The kitchen closes 30 minutes before we do."
 -->
-      
-        
-    
+        <div class="info-card"><h2>Opening hours</h2>
+            <table>
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+            <tr>
+              <td>Monday to Friday</td>
+              <td>7:00 a.m. to 7:00 p.m.</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 a.m. to 8:00 p.m.</td>
+            </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>8:00 a.m. to 4:00 p.m.</td>
+          </tr>
+          </table>
+          <p>The kitchen closes 30 minutes before we do.</p> 
+        </div>
+    </section>        
   <!--TODO 3: Contact form (about 25 min)
     A <section> [section contact] with id="contact" (Students 1 and 2 link
     to this id!). Inside it, a <div> [container] with:
@@ -138,11 +136,10 @@
             -->
    <section class="contact" id="contact"> 
       <div class="container">
-        <h2 class="section-title">Book a table or send us a message</h2>
-        <p class="section-intro">Fill in the form and we'll reply within one business day</p>
+          <h2 class="section-title">Book a table or send us a message</h2>
+          <p class="section-intro">Fill in the form and we'll reply within one business day</p>
         <form class="contact-form" action="contact" method="get">
           <div class="form-grid"> 
-
             <div class="field">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -175,7 +172,6 @@
              <label for="a group order" class="choice">A group order</label>
             <input type="radio" name="topic" value="optionValue">
              <label for="something else" class="choice">Something else</label>
-            
           </fieldset>
         <div>
           <label for="message">Message</label>
@@ -199,7 +195,6 @@
           "Email me the monthly specials"
     ===================================================================
     -->
-
   </main>
   <!-- ===== Shared footer (provided, don't edit) ===== -->
   <footer class="site-footer">
