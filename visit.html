@@ -147,6 +147,7 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
             <label for="visit date">Visit Date</label>
+            <input type="date" id="date" name="date" required>
             <label for="number of guests">Number of guests</label>
             <select id="guests" name="guests">
               <option value="1">1</option>
@@ -157,14 +158,38 @@
               <option value="6 or more">6 or more</option>
             </select>   
           </div>
+          <fieldset class="choice-group">
+            <legend>What's this about?</legend>
+            <input type="radio" name="topic" value="optionValue" checked>
+            <label for="booking a table" class="choice">Booking a table</label>
+            <input type="radio" name="topic" value="optionValue">
+             <label for="a group order" class="choice">A group order</label>
+            <input type="radio" name="topic" value="optionValue">
+             <label for="something else" class="choice">Something else</label>
+            
+          </fieldset>
         <div>
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5"></textarea>
           <button class="button" type="submit">Send message</button>
+          <input type="checkbox"  value="yes">
+          <label for="Email me the monthly specials">Email me the monthly specials</label>
         </div>
         </form>       
       </div>
    </section>
+<!--TODO 4: Phone layout
+    Nothing to add here. This one is CSS only (see css/visit.css).
+
+    STRETCH (only if you finish early): Radio buttons and a checkbox
+      - Between the form grid and the message field, a <fieldset> [choice-group]
+        with a <legend> "What's this about?" and three radio buttons
+        (all with name="topic"), each wrapped in a <label> [choice]:
+          "Booking a table" (checked), "A group order", "Something else"
+      - After the message field, a checkbox wrapped in a <label> [choice]:
+          "Email me the monthly specials"
+    ===================================================================
+    -->
 
   </main>
   <!-- ===== Shared footer (provided, don't edit) ===== -->
