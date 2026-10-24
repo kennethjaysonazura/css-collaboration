@@ -81,6 +81,8 @@
           <img src="images/map.svg" width="480" height="300" alt="map of Corner cup cafe">
           </p>
         </div>
+        </div>
+      </section>
  <!--TODO 2: Opening hours table (about 15 min)
     Inside card 2:
       - <h2> "Opening hours"
@@ -138,7 +140,29 @@
       <div class="container">
         <h2 class="section-title">Book a table or send us a message</h2>
         <p class="section-intro">Fill in the form and we'll reply within one business day</p>
-        
+        <form class="contact-form" action="contact" method="get">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="visit date">Visit Date</label>
+            <label for="number of guests">Number of guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6 or more">6 or more</option>
+            </select>   
+          </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <button class="button" type="submit">Send message</button>
+        </div>
+        </form>       
       </div>
    </section>
 
